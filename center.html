@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/center.css">
+</head>
+<body>
+<script>
+    function a() {
+        var key=document.getElementById('sousou');
+        key.focus();
+    }
+    function f() {
+        var key=document.getElementById('sousou');
+        var text=key.value;
+        if(text==''){
+            alert("输入不能为空！！！");
+            return;
+        }
+        window.location.href='https://uland.taobao.com/sem/tbsearch?refpid=mm_26632258_3504122_32538762&keyword='+
+            text;
+    }
+</script>
+
+<div class="nav">
+    <div class="login">
+        <img class="img_login" src="./image/log.png">
+        <div class="sou">
+            <div class="sou1"></div>
+            <!--onblur="a()"-->
+            <div class="sou2"><input id="sousou" autofocus="autofocus" ></div>
+            <div class="sou3"><button id="burr" onclick="f()"></button></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.head0{
+    height: 40px;
+    width: 100%;
+    background: #F5F5F5;
+    font-size: 12px;
+}
+.head1{
+    width: 1190px;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+.head1> ul>li{
+    float: left;
+    padding: 8px;
+}
+.head1 >ul >li>ul{
+    float: end;
+    display: none;
+    padding: 0;
+    position: absolute;
+
+}
+.head_map{
+    width: 270px;
+    background-color:rgb(255,255,255);
+    overflow: scroll;
+    height: 280px;
+}
+.head1 >ul>li>ul>li:hover{
+    background-color: rgb(244,244,244);
+}
+.head1>ul>li:hover>ul{
+    display: block;
+}
+.head1>ul>li>ul>li{
+    background-color: white;
+    height: 30px;
+    padding: 10px;
+    font-size: 15px;
+}
+.gouwuche{
+    background-image: url("../image/gouwuche.png");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 2px;
+}
+.shoucang{
+    background-image: url("../image/shoucang.png");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 2px;
+}
+.caidan{
+    background-image: url("../image/caidan.png");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 2px;
+}
+.head_li:hover{
+    color: #FF4400;
+}
+li:hover >.shoucang{
+    background-image: url("../image/shoucangjia1.png");
+}
+li:hover >.caidan{
+    background-image: url("../image/caidan1.png");
+}
+.head_li li{
+    color: black;
+}
+.dh{
+    display: none;
+    position: absolute;
+    margin-top: 32px;
+    z-index: 5;
+}
+.dhli:hover +.dh ,.dh:hover{
+    display: block;
+}
+
+.dh1{
+    width: 295px;
+    height:345px;
+    border-color: rgb(244,244,244);
+    border-width: 1px;
+    border-style: dashed;
+    float: left;
+    background: white;
+}
+.dh11{
+    font-size: 20px;
+    font-family: 黑体;
+    margin: 10px;
+    margin-bottom: 0;
+}
+.dh112{
+    background-image: url("../image/dh12.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+.dh113{
+    background-image: url("../image/dh13.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+.dh114{
+    background-image: url("../image/dh14.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+.dh12{
+    width: 50px;
+    float:left ;
+    padding: 5px;
+    margin: 5px;
+}
+.dh12:hover{
+    background-color: rgb(255,77,0);
+}
+.head2{
+    background-color: #F9919D;
+    height: 100px;
+}
+.head2_img{
+    background-image: url("../image/head2.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 1190px;
+    margin: 0 auto;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/center1.css">
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div class="cent">
+        <div class="cent_top">
+            <div class="cent_top_lef">主题市场</div>
+            <div class="cent_top_right">
+                <ul>
+                    <li>天猫<div></div>
+                    </li>
+                    <li>聚划算<div></div>
+                    </li>
+                    <li>天猫市场<div></div></li>
+                    <li>海抢购<div></div>
+                    </li>
+                    <li>电器城<div></div>
+                    </li>
+                    <li>司法拍卖<div></div>
+                    </li>
+                    <li>淘宝心选<div></div>
+                    </li>
+                    <li>兴>农扶贫<div></div>
+                    </li>
+                    <li>飞猪旅行<div></div>
+                    </li>
+                    <li>智能生活<div></div>
+                    </li>
+                    <li>苏宁易购<div></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cent_left">
+            <div class="cent_left_left">
+                <a>
+                    <div class="adv">女装 / 男装 / 内衣<div class="adav adav1" ></div></div>
+                </a>
+                <a>
+                    <div class="adv">鞋靴 / 箱包 / 配件<div class="adav adav2"></div></div>
+                </a>
+                <a>
+                    <div class="adv">童装玩具 / 孕产 / 用品<div class="adav adav3"></div></div>
+                </a>
+                <a>
+                    <div class="adv">家电 / 数码 / 手机<div class="adav adav4"></div></div>
+                </a>
+                <a>
+                    <div class="adv">美妆 / 洗护 / 保健品<div class="adav adav5"></div></div>
+                </a>
+                <a>
+                    <div class="adv">珠宝 / 眼镜 / 手表<div class="adav adav6"></div></div>
+                </a>
+                <a>
+                    <div class="adv">运动 / 户外 / 乐器<div class="adav adav7"></div></div>
+                </a>
+                <a>
+                    <div class="adv">游戏 / 动漫 / 影视<div class="adav adav8"></div></div>
+                </a>
+                <a>
+                    <div class="adv">美食 / 生鲜 / 零食<div class="adav adav9"></div></div>
+                </a>
+                <a>
+                    <div class="adv">鲜花 / 宠物 / 农资<div class="adav adav10"></div></div>
+                </a>
+                <a>
+                    <div class="adv">工具 / 装修 / 建材<div class="adav adav11"></div></div>
+                </a>
+                <a>
+                    <div class="adv">家具 / 家饰 / 家纺<div class="adav adav12"></div></div>
+                </a>
+                <a>
+                    <div class="adv">汽车 / 二手车 / 用品<div class="adav adav13"></div></div>
+                </a>
+                <a>
+                    <div class="adv">办公 / DIY / 五金电子<div class="adav adav14"></div></div>
+                </a>
+                <a>
+                    <div class="adv">百货 / 餐厨 / 家庭保健<div class="adav adav16"></div></div>
+                </a>
+                <a>
+                    <div class="adv">学习 / 卡券 / 本地服务<div class="adav adav17"></div></div>
+                </a>
+            </div>
+            <div id="cent_left_top" class="cent_left_top">
+
+            </div>
+            <div id="cent_left_bottom" class="cent_left_bottom">
+            </div>
+
+        </div>
+        <div class="center_right">
+            <div style="width: 250px;height:500px; border: 1px solid #FF5000;padding: 15px; ">
+                <div style="height: 25px;size: 15px;font-weight: bolder">24小时热闻</div>
+                <div id="articles">
+                </div>
+            </div>
+        <!--添加新闻地方-->
+            <textarea name="news" id="message" style="width: 282px;height: 60px;background: orange"></textarea>
+            <button id="submit1" style="height: 25px;width: 282px">点击发布</button>
+        </div>
+        <div class="center_bottom">
+            <div class="center_bottom_logo"></div>
+            <div class="center_bottom_adav">
+                <img style="float: left" src="https://img.alicdn.com/imgextra/i1/3979119722/O1CN012Lgj1he7NJwpGQ1_!!3979119722-0-beehive-scenes.jpg_120x120q90.jpg_.webp" alt="">
+                <div style="margin-left: 10px;float: left" >
+                    <h4>微漫酱访谈第三期：超萌舞见弥音音！</h4>
+                    <p style="font-size: 12px;">哈喽，大家好，我是你们可爱的微漫酱，今天我们请到了一位舞见小姐姐来做客我们的访谈事，她就是弥音音！</p>
+
+                </div>
+               </div>
+        </div>
+
+    </div>
+    <script>
+        $("#cent_left_top").load("swiper_top.html");
+        $("#cent_left_bottom").load("swiper_bottom.html");
+        //新增内容
+            var showarticle = document.getElementById('showarticle');
+            var writenews = document.getElementById('writenews');
+            var article = document.getElementById('articles');
+            var message = document.getElementById('message');
+            var submit1 = document.getElementById('submit1');
+            submit1.onclick = function(){
+            if (message.value.trim() == ''){
+            alert('发布信息不能为空');
+        }else{
+            var param = document.createElement('a');
+            param.innerText=message.value;
+            article.appendChild(param);
+            message.value = '';
+        }
+        }
+            document.body.onkeydown = function (ev) {
+            if (ev.keyCode == 13) {
+            // 去掉enter的默认行为
+            ev.returnValue = false;
+            if (message.value.trim() == ''){
+            alert('发布信息不能为空');
+        }else{
+            var param = document.createElement('a');
+            param.innerText=message.value;
+            article.appendChild(param);
+            message.value = '';
+        }
+        }
+        }
+            // addEventListener()是给动态创建的元素添加事件
+            article.addEventListener('click',function(){
+            writenews.style.display='none';
+            showarticle.style.display='block';
+            var span = document.createElement('span');
+            span.innerText =article.innerText;
+            showarticle.appendChild(span);
+        })
+
+    </script>
+
+</body>
+</html>

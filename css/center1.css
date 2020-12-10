@@ -1,0 +1,196 @@
+.cent{
+    width: 1190px;
+    height: 666px;
+    background: white;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.cent_top{
+    width: 100%;
+    height: 30px;
+}
+.cent_top_lef{
+    width: 188px;
+    height: 28px;
+    border: 1px solid  #FF5000;
+    background: #FF5000;
+    color: white;
+    text-align: center;
+    /*
+    *垂直居中文字
+     */
+    vertical-align: middle;
+    display: table-cell;
+    float: left;
+}
+.cent_top_right{
+    width: 1000px;
+    background-image: url("../image/con2.png");
+    background-repeat: repeat-y;
+    height: 100%;
+    float: left;
+}
+.cent_top_right ul{
+    list-style: none;
+}
+.cent_top_right ul li{
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    line-height: 25px;
+    color: white;
+}
+.cent_top_right ul li div{
+    margin-left: 10px;
+    position: relative;
+    background-image: url("../image/tou.png");
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 32px;
+    bottom: 50px;
+    display: none;
+}
+.cent_top_right ul li:hover div{
+    display: block;
+}
+.cent_left{
+    width: 900px;
+    height: 528px;
+    float: left;
+}
+.cent_left_left{
+    width: 188px;
+    border: 1px solid #FF5000;
+    height: 528px;
+    background: white;
+    float: left;
+}
+.adv{
+    height: 33px;
+    font-size: 15px;
+    font-family: 微软雅黑;
+    line-height: 35px;
+    padding-left: 25px;
+}
+a:hover .adv{
+    background-color: rgb(255,228,220);
+    color: rgb(255,80,0);
+}
+.adav{
+    z-index: 8;
+    display: none;
+    position: absolute;
+    top: 300px;
+    width: 710px;
+    height: 520px;
+    margin-left:170px ;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.adav1{
+    background-image: url("../image/cxk1.png");
+}
+.adav2{
+    background-image: url("../image/cxk2.png");
+}
+.adav3{
+    background-image: url("../image/cxk3.png");
+}
+.adav4{
+    background-image: url("../image/cxk4.png");
+}
+.adav5{
+    background-image: url("../image/cxk5.png");
+}
+.adav6{
+    background-image: url("../image/cxk6.png");
+}
+.adav7{
+    background-image: url("../image/cxk7.png");
+}
+.adav8{
+    background-image: url("../image/cxk8.png");
+}
+.adav9{
+    background-image: url("../image/cxk9.png");
+}
+.adav10{
+    background-image: url("../image/cxk10.png");
+}
+.adav11{
+    background-image: url("../image/cxk11.png");
+}
+.adav12{
+    background-image: url("../image/cxk12.png");
+}
+.adav13{
+    background-image: url("../image/cxk13.png");
+}
+.adav14{
+    background-image: url("../image/cxk14.png");
+}
+.adav15{
+    background-image: url("../image/cxk15.png");
+}
+.adav16{
+    background-image: url("../image/cxk16.png");
+}
+.adav17{
+    background-image: url("../image/cxk1.png");
+}
+.adv:hover .adav{
+    display: block;
+}
+.cent_left_top{
+    width: 690px;
+    height: 280px;
+    background-color: #FF0000;
+    float: left;
+    margin: 10px;
+}
+.cent_left_bottom{
+    width: 690px;
+    height: 220px;
+    float: left;
+    margin: 10px;
+}
+.center_bottom{
+    width: 890px;
+    height: 90px;
+    background-color: #ffffff;
+    float: left;
+    margin-top: 20px;
+}
+.center_right{
+
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 625px;
+    float: right;
+    margin-top: 10px;
+}
+.center_bottom_logo{
+    margin-top: 25px;
+    margin-left: 10px;
+    background-image: url("https://img.alicdn.com/tfs/TB1KbhkbUgQMeJjy0FeXXXOEVXa-129-26.png");
+    width: 130px;
+    height: 40px;
+    background-repeat: no-repeat;
+    float: left;
+}
+.center_bottom_adav{
+    width: 690px;
+    height: 70px;
+    float: right;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.center_bottom_adav div{
+    width: 480px;
+}
+.center_right a{
+    display: block;
+    border-bottom: 1px solid #FF5000;
+}
